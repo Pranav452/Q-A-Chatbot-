@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Q&A Expert</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>MCP Expert</h2>
+                <button id="newChatBtn" class="new-chat-btn">+ New chat</button>
+            </div>
+            <div class="sidebar-content">
+                <div class="chat-history">
+                    <!-- Chat history will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant-message">
+                        <div class="message-content">
+                            <p>I'm an MCP expert. I can help you with Model Context Protocol concepts, implementation, best practices, and troubleshooting. What would you like to know?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <textarea id="userInput" placeholder="Ask about MCP servers, implementation, or concepts..." rows="1"></textarea>
+                        <button id="sendButton" class="send-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 11L12 6L17 11M12 18V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mcpKnowledgeBase.js"></script>
+    <script src="chatBot.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
